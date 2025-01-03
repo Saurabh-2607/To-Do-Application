@@ -4,11 +4,11 @@ from tkinter import messagebox
 
 def connect_to_db():
     return psycopg2.connect(
-        host="db-postgresql-nyc1-14277-do-user-18417666-0.g.db.ondigitalocean.com",
-        port=25060,
-        user="doadmin",
-        password="AVNS_GmPWKRB8Tjatu14QzT7",
-        database="defaultdb"
+        host="host",
+        port=port,
+        user="username",
+        password="password",
+        database="database_name"
     )
 
 def create_user_table(user_name):
