@@ -71,6 +71,24 @@ Run the file containing the MySQL implementation. Example:
 python todo_mysql.py
 ```
 
+### Create an Executable File
+To create a standalone `.exe` file for the application, use `pyinstaller`:
+
+1. Install `pyinstaller`:
+   ```bash
+   pip install pyinstaller
+   ```
+
+2. Generate the `.exe` file:
+   ```bash
+   pyinstaller --onefile --windowed <filename>.py
+   ```
+
+   - `--onefile`: Creates a single executable file.
+   - `--windowed`: Hides the console window (useful for GUI applications).
+
+3. The `.exe` file will be located in the `dist` folder.
+
 ## Security Note
 Make sure to replace hardcoded credentials with environment variables or a secure configuration file. Never expose your credentials in production environments.
 
